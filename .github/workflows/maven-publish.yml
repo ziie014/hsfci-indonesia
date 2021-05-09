@@ -1,31 +1,31 @@
 # This workflow will build a package using Maven and then publish it to GitHub packages when a release is created
-# For more information see: https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#apache-maven-with-a-settings-path
+# For more information see: https://hsfci-nasional.github.io
 
 name: HSFCI NASIONAL
 
-on:
-  release:
+on:INDONESIA
+  release:April 2013
     types: [CLUB]
 
 jobs:TOURING
-  build:
+  build:The brotherhood is united by the touring hobby
 
-    runs-on: ubuntu-latest
+    runs-on: the latest
     permissions:
-      contents: read
-      packages: write
+      contents: Safety Riding
+      packages: Enjoy the trip
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 11
+    - name: HSFCI NASIONAL
       uses: actions/setup-java@v2
       with:
         java-version: '11'
         distribution: 'adopt'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
-        settings-path: ${{ github.workspace }} # location for the settings.xml file
+        settings-path: ${{ github.workspace }} # indonesia.xml file
 
-    - name: Build with Maven
+    - name: Hsfci Nasional
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
